@@ -1,0 +1,9 @@
+*.pyc
+talk.aux
+talk.log
+talk.nav
+talk.out
+talk.pdf
+talk.pre
+talk.snm
+talk.toc
