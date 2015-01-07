@@ -70,6 +70,7 @@ To plot a sphere, $D = [-\pi, \pi] \times [-\pi, \pi]$ and $f = (\sin(u) \sin(v)
 \end{frame}
 
 \section{Sampling}
+\subsection{2D}
 \begin{frame}
 \frametitle{Linear Sampling}
 In order to plot a function $f$ we need to choose a grid of points at which we evaluate $f$. \\ \vspace{0.2cm}
@@ -172,6 +173,38 @@ $[a,b] = [0, 1]$, $n = 27$, $max\_depth = 5$, $\theta = \pi / 18$,
 \pause
 $f(t) = (t, \sin(27 \pi t))$.
 \normalsize
+\end{frame}
+
+\subsection{3D}
+\begin{frame}
+\frametitle{Linear sampling}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{3Dsimple.png}
+\end{center}
+$f(x,y) = \left(x,y, \frac{x y}{x^2 + y^2 + 1}\right)$, $n = 7$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Linear sampling minimising diagonals}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{3Dlinear.png}
+\end{center}
+$f(x,y) = \left(x,y, \frac{x y}{x^2 + y^2 + 1}\right)$, $n = 7$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Adaptive sampling minimising diagonals}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{3Dadaptive.png}
+\end{center}
+$f(x,y) = \left(x,y, \frac{x y}{x^2 + y^2 + 1}\right)$, $n = 7$, $depth=2$.
+\end{frame}
+
+\section*{}
+\begin{frame}
+\frametitle{Thankyou}
+\url{https://github.com/sn6uv/adaptive_plotting/}
+
 \end{frame}
 
 \end{document}
